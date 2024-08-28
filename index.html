@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+            font-family: Montserrat;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width:100% ;
+            display: flex;
+            flex-direction: column;
+            user-select: none;
+            color:white;
+          
+        }
+        
+        
+        
+
+        
+        
+         header{
+            background: black;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            justify-content: space-between;
+            padding-left:50px;
+            padding-right:50px;
+            position: fixed;
+         }
+         .logo{
+          font-size: 25px;
+         }
+         header ul{
+            list-style: none;
+            display: flex;
+
+         }
+         header button{
+            display: none;
+         }
+         header ul li{
+margin-left: 50px;
+         }
+         @media (max-width:650px) {
+          .faqsimg{
+            display: none;
+          }
+          .faqs{
+            text-align:center
+          }
+           .carclass{
+             width: 50px;
+            
+           }
+           .submain{
+             justify-content:center
+           }
+            .menu ul{
+                display:flex;
+                flex-direction:column;
+            }
+            header button{
+                display:block
+            }
+            .carimg{
+                width:70%;
+                margin-left:50px;
+                padding-top:50px
+            }
+            header{
+                padding-left:20px;
+                padding-right:20px;
+                height:70px;
+
+            }
+            .main{
+                display:flex;
+                flex-direction:column;
+                padding-bottom: 50px;
+                padding-top: 50px;
+                
+            }
+            .mainmsg{
+                margin-left:30px;
+                margin-top: 20px;
+            }
+            .main h3{
+                font-size:30px;
+
+            }
+            header button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: transparent;
+        color:orchid;
+        outline: none;
+        font-size: 1.7em;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu i.fa-times,
+    .menu.opened i.fa-bars {
+        display: none;
+    }
+    
+
+    .menu.opened i.fa-times,
+    .menu i.fa-bars {
+        display: block;
+        animation: enter 5s;
+        
+        
+    }
+    .menu i.fa-times{
+      color:black
+    }
+    .menu i.fa-bars{
+      color:white
+    }
+
+    @keyframes enter {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    
+    
+    
+ul{
+      
+      position:fixed;
+      top:0;
+      right:0;
+      color:black;
+      background:white;
+      height: 100vh;
+    width: 100%;
+    display: flex;
+      flex-direction: column;
+      padding: 50px;
+      align-items:flex-end;
+      transform: translatex(100%);
+        }
+          li{
+            padding-top: 50px;
+            color:black;
+            font-size: 20px;
+            font-weight: bold;
+          }
+          
+        
+        .menu.opened ul{
+          transform: translatex(0);
+          box-shadow: 0px 0px 2px black;
+          position: absolute;
+        }
+
+        
+        }
+         
+.main{
+    display: inline-flex;
+    align-items: center;
+    
+    
+
+}
+.carimg{
+    width:70%
+
+}
+.mainp{
+   font-size: 20px;
+}
+@media (min-width:800px){
+   .main h3{
+    font-size: 50px;
+   }
+   header{
+     height:80px
+   }
+   
+   .faqs{
+     display: inline-flex;
+     align-items: center;
+     padding-left:100px;
+
+
+   }
+   .faq{
+    min-width:70%;
+   }
+   .faqsimg{
+     width:30%;
+     min-height:100px;
+     margin-left: 100px;
+     display:none
+   }
+   .logo{
+    font-size: 20px;
+
+    text-transform: uppercase;
+   }
+}
+ .contact{
+          margin-top:60px;
+          width:100%;
+          text-align: center;
+          
+          
+        }
+        .contactinfo{
+          margin-top: 30px;
+        }
+        .contact i{
+          color:skyblue;
+        }
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+m{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+max-width:300pX;
+  margin: auto;
+}
+
+.wrapper > p,
+.wrapper > h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.wrapper > h1 {
+  letter-spacing: 3px;
+}
+
+.accordion {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size:15px;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: ;
+}
+
+.accordion i {
+  font-size: 15px;
+}
+
+.active,
+.accordion:hover {
+  background-color:brown;
+  color:#f1f7f5;
+  user-select: none;
+}
+.pannel {
+  padding:20px;
+  background-color: white;
+  overflow: hidden;
+  background-color: #f1f7f5;
+  display: none;
+  border: ;
+}
+.pannel p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.faq {
+  border: 1px solid #f1f7f5;
+  margin: 10px 0;
+}
+.faq.active {
+  border: none;
+}
+
+
+   
+   
+   *{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.testimonials{
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background:brown;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: #fff;
+  padding: 30px;
+}
+.testimonial img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.name{
+  font-size:;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color:orange;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
+.how{
+  padding: 40px 0;
+  
+  color: #434343;
+  text-align: center;
+}
+.innerhow{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: #ff6961;
+  margin: 26px auto;
+}
+
+.rowhow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.colhow{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonialhow{
+  background: #fff;
+  padding: 30px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.stars{
+  color: orange;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+.colhow{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.colhow{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h3 class="logo" style="display:inline-flex;align-items:center">
+        <img style="width: 50px;border-radius: 50%;" src="1724584009730~2.jpg" alt="">
+        
+            Rent a ride
+        </h3>
+        <section class="menu">
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    About us
+                </li>
+                <li>
+                    Testimonial
+                </li>
+                <li>
+                    Contact
+                </li>
+            </ul>
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </section>
+    </header>
+    <section style="padding-right:50px;padding-top:200px;background:brown" class="main">
+            <img class="carimg" src="1724587038724.jpg" alt="">
+            <div class="mainmsg">
+                <p class="mainp">Save big</p>
+                <h3><b style="color:cyan;">Rent</b> or <b style="color:cyan">buy</b> a car in installment</h3>
+                <p>Book your ride with us now.</p>
+                <p>Take car and pay with time</p>
+<button style="background:black;color:white;font-weight:bold;padding:10px;border-radius:5px;box-shado:0px 0px 50px cyan;margin-top:50px;border:none;cursor:pointer" class="cta">
+              <b>Book now</b>
+            </button> 
+            </div>
+    </section>
+    
+    
+
+    <div class="how">
+      <div class="innerhow">
+        <h3>SEE HOW.</h3>
+        <div class="border"></div>
+
+        <div class="rowhow">
+          <div class="colhow">
+            <div class="testimonialhow">
+               <i style="color:black;font-size:50px"class="fas fa-car"></i>
+              
+            
+
+              <p>
+             1. Make your car choice.
+              </p>
+            </div>
+          </div>
+
+          <div class="colhow">
+            <div class="testimonialhow">
+              <i style="color:black;font-size:50px"class="fas fa-phone"></i>
+              
+
+              <p>
+              2.Contact 0perator
+              </p>
+            </div>
+          </div>
+
+          <div class="colhow">
+            <div class="testimonialhow">
+             
+<i style="color:black;font-size:50px"class="fas fa-map-marker-alt"></i>
+
+              <p>
+             3. Give in your location
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+ 
+    <div class="faqs">
+
+   <img  id="car1" style="width:300px" src="1724685958964.jpg">
+ <div style="margin-top:20px;margin-bottom:50px;" class="wrapper">
+
+      
+      <h4 style="color:black">Our rental fleet</h4>
+
+
+      <div class="faq">
+        <button onclick="changeImage('1724706166441.jpg')"  class="accordion">
+Toyota spacio 2001
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+          $50/day
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button onclick="changeImage('1724747499055.jpg')" class="accordion">
+          Toyota Alphard 2012
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+        $53/day
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button onclick="changeImage('1724706112034.jpg')" class="accordion">
+          Range rover velar 2018
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            $93/day
+          </p>
+        </div>
+      </div>
+<div class="faq">
+        <button  onclick="changeImage('1724747873913.jpg')"  class="accordion">
+          
+2007 Subaru Impreza WRX STi
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            $35/day
+          </p>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+   
+<section>
+  
+      <h3 style="text-align:center;color:black">
+        
+        PLAN YOUR RIDE TODAY
+      </h3>
+<div class="border"></div>
+      
+      <img style="width:100%" src="1724750239467-removebg-preview.png">
+
+    </section>
+    
+    
+
+    <div class="how">
+      <div class="innerhow">
+        <h3>Why choose us.</h3>
+       
+
+        <div class="rowhow">
+          <div class="colhow">
+            <div class="testimonialhow">
+                           <span style="color:orange;font-size:30px" class="material-symbols-outlined">
+live_help
+</span>
+              
+            
+
+              <h5>
+             Due to our prior service, You oughtn't hesitate choosing us..Why?
+              </h5>
+<button style="background:black;color:white;font-weight:bold;padding:10px;border-radius:5px;box-shado:0px 0px 50px cyan;margin-top:50px;border:none;cursor:pointer" class="cta">
+              <b>Book now</b>
+            </button> 
+            </div>
+          </div>
+
+          <div class="colhow">
+            <div class="testimonialhow">
+                         <span style="color:orange;font-size:30px" class="material-symbols-outlined">
+disabled_by_default
+</span>
+
+              <h5>
+              1.No hidden fees
+              </h5>
+            </div>
+          </div>
+
+          <div class="colhow">
+            <div class="testimonialhow">
+    <span style="font-size:30px;color:orange" class="material-symbols-outlined">
+paid
+</span>
+              <h5>
+             2. All-in-one payment</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+        
+
+    <div class="testimonials">
+      <div class="inner">
+        <h3>TESTIMONIAL</h3>
+        <div class="border"></div>
+
+        <div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <img src="1724754296115~2.jpg" alt="">
+              <div class="name">Kats Angel</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p>
+                Literally nothing to complain about.Thanks for the service
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="Screenshot_20240719-192236_WhatsApp.jpg" alt="">
+              <div class="name">Nsamba Shafiq</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>
+Having you is the best choise i've ever made.Keep it rolling
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="woman-sex.jpg" alt="">
+              <div class="name">Alinda Beatreace</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>
+              No worries now,I can travel to wherever i wish.Thank you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+      
+    
+    
+    
+
+    
+    <div class="faqs">
+   <img class="faqsimg" style="width:30%"src="1724685958964.jpg">
+ <div style="margin-bottom:50px;" class="wrapper">
+<h3 style="color: black;margin-bottom: 50PX;">FAQ</h3>
+      
+      <h4 style="color:black">Frequently Asked Questions</h4>
+
+
+      <div class="faq">
+        <button class="accordion">
+          How do I withdraw my earnings?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+          There a various ways to withdraw your earnigs ie,<b>airtel</b> and <b> MTN</b> mobile money,<b>paypal</b> and <b>Mastercards</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I be a part of Batagain?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Registration is free.
+            An account activation fee is of just ugx.7000 is required.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How does it work?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+            saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+            ullam, iure eligendi harum eaque hic corporis debitis porro
+            consectetur voluptate rem officiis architecto.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    
+ <a style="scroll-behavior:smooth"  href="#">
+        <img src="fgg">
+      </a>
+    
+    
+    
+    
+    <section style="border-radius:60% 50%  0% 0% ;background:black;color:white" class="contact">
+      <div class="contactinfo">
+      <i style="font-size:30px" class="fas fa-map-marker-alt"></i>
+      <br>
+      <b>
+        Location
+      </b>
+      <p>
+        Uganda,Kampala
+      </p>
+      </di>
+      <div class="contactinfo">
+<i style="font-size:30px" class="fa-regular fa-envelope"></i><br>
+<b>
+  mail
+</b>
+<p>travor.dev@gmail.com</p>
+</div>
+    </section>
+     
+    
+    <footer style="box-shadow:0px 0px 100px black;margin-top:0px;padding:40px;font-weight:bold;background:black;color:white;font-size:13px;justify-content:center;height:100px;text-align:center">
+      <p>Coded with love by Travor.dev</p><div style="margin-top:10px">
+            <a href="https://www.facebook.com/profile.php?id=100083334072840"><i style="color:white;margin-right:10px" class="fab fa-facebook"></i></a>
+           <a style="color:white" href="https://www.linkedin.com/in/travor-seemz-rich-5190702a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" ><i style="margin-right:10px" class="fab fa-linkedin"></i></a>
+<i class="fab fa-github"></i>
+</div>
+    
+      
+      
+    </footer>
+    
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+        
+var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          
+          }
+        });
+      }
+function changeImage(fileName){
+  let img=document.querySelector("#car1");
+  img.setAttribute("src",fileName);
+}
+        
+        
+    </script>
+</body>
+</html>
